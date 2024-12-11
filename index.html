@@ -418,28 +418,28 @@
 
           <div class="card card-blog">
             <div class="card-img">
-              <a href="MusterBlog.html"><img src="img/post-1.v1.jpg" alt="" class="img-fluid"></a>
+              <a href="Blog/CreatingAWebsite.html"><img src="img/WebsitePic.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 <div class="card-category">
-                  <h6 class="category">Muster Kategorie</h6>
+                  <h6 class="category">Web Dev</h6>
                 </div>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">Muster Titel</a></h3>
+              <h3 class="card-title"><a href="blog-single.html">Website erstellen</a></h3>
               <p class="card-description">
-                Muster Untertitel (Zusammenfassung)
+                Hier erkläre ich grob, warum ich mir eine persönliche Website erstellt habe.
               </p>
             </div>
             <div class="card-footer">
               <div class="post-author">
-                <a href="#Muster Autor Link">
+                <a class="nav-link js-scroll" href="#ueber">
                   <img src="img/Avatar.v1.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Muster Autor</span>
+                  <span class="author">Raphael Hounsiagaman</span>
                 </a>
               </div>
               <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> Muster Datum
+                <span class="ion-ios-clock-outline"></span> 10 Dez. 2024
               </div>
             </div>
           </div>
@@ -450,85 +450,74 @@
   </section>
   <!--/ Section Blog End /-->
 
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.v1.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Kontaktiere mich
-                    </h5>
-                  </div>
-                  <div>
-                      <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Dein Name" data-rule="minlen:3" data-msg="Gebe mindestens 3 Zeichen ein!" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Deine Email" data-rule="email" data-msg="Gebe eine gültige Email Adresse ein!" />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Betreff" data-rule="minlen:4" data-msg="Gebe mindestens 4 Zeichen ein!" />
-                              <div class="validation"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Gebe eine Nachricht für mich ein" placeholder="Nachricht"></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Abschicken</button>
+ <!--/ Section Contact-Footer Star /-->
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.v1.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="contact-mf">
+          <div id="contact" class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Kontaktiere mich
+                  </h5>
+                </div>
+                <div>
+                  <form id="contact-form" method="post" class="contactForm">
+                    <div id="sendmessage" style="color: green; display: none;">Deine Nachricht wurde gesendet. Danke!</div>
+                    <div id="errormessage" style="color: red; display: none;">Es gab einen Fehler beim Senden. Versuche es bitte erneut.</div>
+                    <div class="row">
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Dein Name" required />
                         </div>
                       </div>
-                    </form>
-                  </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Deine Email" required />
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Betreff" required />
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <textarea class="form-control" name="message" rows="5" placeholder="Nachricht" required></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="submit" class="button button-a button-big button-rouded">Abschicken</button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Kontaktdaten
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      Kontaktiere mich, wenn du Kontakt aufnehmen willst.
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> Deutschland </li>
-		      <!--
-                      <li><span class="ion-ios-telephone"></span> meine Nummer </li>
-		      -->
-                      <li><span class="ion-email"></span> business@raphaelhounsiagaman.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href="https://www.youtube.com/@RaphaelHounsiagaman"><span class="ico-circle"><i class="ion-social-youtube"></i></span></a></li>
-                      <li><a href="https://www.instagram.com/raphaelhounsiagaman"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href="https://x.com/rhounsiagaman"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-		      <!--
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-		      -->
-                    </ul>
-                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">
+                    Kontaktdaten
+                  </h5>
+                </div>
+                <div class="more-info">
+                  <p class="lead">
+                    Kontaktiere mich, wenn du Kontakt aufnehmen willst.
+                  </p>
+                  <ul class="list-ico">
+                    <li><span class="ion-ios-location"></span> Deutschland </li>
+                    <li><span class="ion-email"></span> business@raphaelhounsiagaman.com</li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <ul>
+                    <li><a href="https://www.youtube.com/@Raphael_Hounsiagaman"><span class="ico-circle"><i class="ion-social-youtube"></i></span></a></li>
+                    <li><a href="https://www.instagram.com/raphaelhounsiagaman"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                    <li><a href="https://x.com/rhounsiagaman"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -536,22 +525,48 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>Raphael Hounsiagaman</strong>. All Rights Reserved</p>
-              <div class="credits">
-                Designed by Raphael Hounsiagaman</a>
-              </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Raphael Hounsiagaman</strong>. All Rights Reserved</p>
+            <div class="credits">
+              Designed by Raphael Hounsiagaman</a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </section>
-  <!--/ Section Contact-footer End /-->
+    </div>
+  </footer>
+</section>
+<!--/ Section Contact-footer End /-->
+
+<!-- EmailJS Integration -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+      emailjs.init("NTJ-Ilo8rcdsViG3n"); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const sendMessage = document.getElementById('sendmessage');
+      const errorMessage = document.getElementById('errormessage');
+
+      emailjs.sendForm('service_bfpvyze', 'template_zggqm2k', this)
+          .then(() => {
+              sendMessage.style.display = 'block';
+              errorMessage.style.display = 'none';
+              this.reset();
+          })
+          .catch(() => {
+              errorMessage.style.display = 'block';
+              sendMessage.style.display = 'none';
+          });
+  });
+</script>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
